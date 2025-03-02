@@ -1,0 +1,657 @@
+/* ########### FONT FAMILIES (IMPORTED) ########### */
+@import url('https://fonts.googleapis.com/css?family=Poppins'); /* "Poppins" */
+@import url('https://fonts.googleapis.com/css?family=Merienda+One'); /* "Merienda One" */
+@import url('https://fonts.googleapis.com/css?family=Alfa+Slab+One'); /* "Alfa Slab One" */
+
+
+/* ########### :ROOT (VARIABLES : GLOBAL) ########### */
+:root{
+    --off-color-theme: #d84b4b;
+    --off-l-color-theme: #f77979;
+    --off-border-cut: 5px solid var(--off-color-theme);
+    --off-sd-transition: all 300ms;
+    --off-sd-color: #444;
+    --off-large-img-zoom: all 700ms ease 0s;
+    --off-special-txt-font: "Merienda One",Arial,sans-serif;
+}
+
+/* ########### PSEUDO ELEMENTS ########### */
+::selection{
+    background-color: var(--off-l-color-theme);
+    color: #fff;
+}
+
+/* ########### GENERAL MARKUPS (ON EVERY SITE) ########### */
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Poppins, Arial, sans-serif;
+    overflow-x: hidden;
+    color: var(--off-sd-color);
+}
+.container{
+    width: 90%;
+    margin:auto;
+    overflow: hidden;
+}
+a{
+    text-decoration: none;
+    color: var(--off-color-theme);
+}
+a:hover{
+    color: var(--off-l-color-theme);
+}
+.brand-color{
+    color: var(--off-color-theme);
+}
+.center-img{
+    display: block;
+    margin: auto;
+}
+
+/* ########### LINK AS A BUTTON ########### */
+.btn{
+display: inline-block;
+    padding: 20px;
+    width: 150px;
+    border-radius: 50px;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 1.3rem;
+    margin: 5px 20px;
+    transition: var(--off-sd-transition);
+}
+.btn:hover{
+    width: 180px;
+    transition: var(--off-sd-transition);
+}
+.group-btn{
+    text-align: center;
+}
+.single-btn{
+    display: block;
+    margin: auto;
+}
+.larger-btn{
+    width: 250px;
+}
+.larger-btn:hover{
+    width: 280px;
+}
+
+/*  SPECIFIC BUTTONS (GLOBAL)  */
+.gray-btn{
+    background: #fff;
+    color: #444;
+}
+.brand-color-btn{
+    background: var(--off-color-theme);
+    color: #fff;
+}
+.brand-l-color-btn{
+    background: var(--off-l-color-theme);
+    color: #fff;
+}
+.readmore-btn{
+    background: #d19c68;
+    color: #fff;
+    display: block;
+    margin: auto;
+}
+.gray-btn:hover{
+    background: #dedede;
+    color: #444;
+}
+.brand-color-btn:hover{
+    background: var(--off-l-color-theme);
+    color: #fff;
+}
+.brand-l-color-btn:hover{
+    background: var(--off-color-theme);
+    color: #fff;
+}
+.readmore-btn:hover{
+    background: #f2b77d;
+    color: #fff;
+}
+
+/* ########### SPECIFIC TEXT STYLES ########### */
+.txt-special{
+    color: var(--off-color-theme);
+    font-family: var(--off-special-txt-font);
+    font-variant: small-caps;
+}
+.txt-s-redirect{
+    font-size: 2.2rem;
+}
+
+/* ########### IMAGE STYLES (GLOBAL) ########### */
+.img40p img{
+    width: 40%;
+}
+.logo-300px{
+    width: 200px;;
+}
+
+
+
+
+
+/* ########### STANDARD GRID (2th ROW HORIZONTALY) ########### */
+.two-c-grid{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    padding: 5vh 0;
+}
+.element-group{
+    margin: auto;
+    margin-top: 5vh;
+    width: 70%;
+    position: relative;
+}
+.two-c-grid h3{
+    margin: 0;
+    font-size: 2.3rem;
+    text-align: center;
+    border-bottom: 3px solid #555;
+}
+.two-c-grid p{
+    margin: 0;
+    font-size: 1.4rem;
+    text-align: justify;
+}
+.two-c-grid img{
+    display: block;
+    margin: auto;
+    width: 60%;
+    transition: var(--off-large-img-zoom);
+}
+.two-c-grid img:hover{
+    transform: scale(1.1);
+    transition: var(--off-large-img-zoom);
+}
+
+/* ########## RIGHT SIDE GRID ########## */
+.right-grid{
+    grid-template-areas: 
+        "rg-h3 rg-img"
+        "rg-p rg-img";
+}
+.right-grid h3{
+    grid-area: rg-h3;
+}
+.right-grid p{
+    grid-area: rg-p;
+}
+.right-grid img{
+    grid-area: rg-img;
+}
+
+/* ########## LEFT SIDE GRID ########## */
+.left-grid{
+    grid-template-areas: 
+        "lg-img lg-h3"
+        "lg-img lg-p";
+}
+.left-grid h3{
+    grid-area: lg-h3;
+}
+.left-grid p{
+    grid-area: lg-p;
+}
+.left-grid img{
+    grid-area: lg-img;
+}
+
+
+
+
+
+
+
+
+
+
+/* ########### HEADER (GLOBAL) ########### */
+#global-header .global-header{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-areas: 
+        "h-branding h-nav h-nav";
+    background: rgba(255,255,255,0.9);
+    text-align: center;
+    border-bottom: var(--off-border-cut);
+}
+#global-header .global-header a{
+    color: #444;
+}
+#global-header .global-header img{
+    grid-area: h-branding;
+    width: 330px;
+    margin-left: auto;
+}
+#global-header .global-header nav{
+    grid-area: h-nav;
+    padding-top: 0.5vh;
+    list-style-type: none;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+}
+#global-header .global-header nav li{
+    padding: 0 15px;
+    display: inline;
+}
+
+#global-header .global-header nav a{
+    color: #777;
+    font-weight: bold;
+}
+
+#global-header .global-header nav a:hover{
+    color: var(--off-l-color-theme);
+}
+#global-header .global-header .current-nav a{
+    color: var(--off-color-theme);
+    border-bottom: 4px solid var(--off-color-theme);
+}
+
+#global-header .global-header .current-nav a:hover{
+    border-bottom: 4px solid var(--off-l-color-theme);
+}
+
+/* HEADER SHOWCASE */
+#global-header .background{
+    width: 100vw;
+    height: 50vh;
+}
+#global-header .global-showcase h2, #global-header .global-showcase p{
+    color: #fff;
+    text-shadow: 3px 3px #444;
+    text-align: center;
+}
+#global-header .global-showcase h2{
+    margin: 0;
+    font-size: 3rem
+}
+#global-header .global-showcase p{
+    margin: 0;
+    font-size: 1.75rem;
+    font-weight: bold;
+}
+
+#global-header .half-showcase{
+    margin-top: 160px;
+}
+.not-in-showcase-h1{
+    margin-top: 7vh;
+}
+
+.showcase-anim{
+    animation-name: showAnim;
+    animation-duration: 1s;
+}
+
+@keyframes showAnim{
+    from {
+        transform: translateX(150%);
+    }
+    to {
+        transform: translateX(0px);
+    }
+}
+
+.btn-anim{
+    animation-name: btnAnim;
+    animation-delay: 1s;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+@keyframes btnAnim{
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+
+
+
+/* ########### FOOTER (GLOBAL) ########### */
+#global-footer{
+    border-top: var(--off-border-cut);
+    text-align: center;
+    padding: 2vh 0;
+}
+#global-footer .footer-grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-areas: 
+        "f-logo f-terms f-com"
+        "f-webplayer f-terms f-com"
+        "f-copy f-copy f-socialm-img";
+    width: 60%;
+}
+#global-footer p{
+    margin: 0;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+#global-footer .footer-copyright{
+    grid-area: f-copy;
+    padding-top: 28px;
+    font-variant: small-caps;
+    font-size: 1.3rem;
+}
+#global-footer .footer-logo{
+    grid-area: f-logo;
+}
+#global-footer ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+#global-footer ul li{
+    padding: 0 10px;
+}
+#global-footer ul a{
+    color: #444;
+}
+#global-footer ul a:hover{
+    color: var(--off-l-color-theme);
+}
+#global-footer .footer-terms{
+    grid-area: f-terms;
+}
+#global-footer .footer-community{
+    grid-area: f-com;
+}
+#global-footer .footer-terms, #global-footer .footer-community{
+    margin-top: 50px;
+}
+#global-footer .footer-terms p, #global-footer .footer-community p{
+    display: block;
+    margin: auto;
+    width: 50%;
+    border-bottom: 3px solid #666;
+}
+#global-footer .footer-socialmedia{
+    grid-area: f-socialm-img;
+}
+#global-footer .footer-socialmedia img{
+    width: 60px;
+    filter: saturate(0);
+    transition: var(--off-sd-transition);
+    padding: 10px;
+}
+#global-footer .footer-socialmedia img:hover{
+    transform: scale(1.2);
+    filter: saturate(0.75);
+    transition: var(--off-sd-transition);
+}
+#global-footer .webplayer-btn-direct{
+    grid-area: f-webplayer;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* ########### MEDIA QUERY FOR TABLETS ########### */
+@media(max-width:960px){
+        /* ########### GENERAL ########### */
+    .not-on-tablet{
+        display: none;
+    }
+    
+    
+    
+        /* ########### TWO-GRID (GLOBAL) ########### */
+    .two-c-grid{
+    grid-template-columns: repeat(1,1fr);
+    grid-template-areas: 
+        "image"
+        "textgrid";
+    padding: 10vh 0;
+    }
+    .two-c-grid img{
+    grid-area: image;
+    width: 70%;
+    }
+    .element-group{
+    grid-area: textgrid;
+    margin-top: 5vh;
+    width: 80%;
+    }
+    
+    
+    
+        /* ########### HEADER (GLOBAL) ########### */
+    #global-header .global-header{
+    grid-template-columns: repeat(3,1fr);
+    grid-template-areas: 
+        "h-branding h-nav h-nav"
+    }
+    #global-header .global-header img{
+    width: 340px;
+    margin: auto;
+    }
+    #global-header .global-header nav{
+        font-size: 1.5rem;
+    }
+    #global-header .global-header nav li{
+        padding: 7px;
+    }
+    #global-header .global-showcase p{
+    font-size: 1.75rem;
+    }
+
+         /* ########### FOOTER (GLOBAL) ########### */
+    #global-footer{
+    padding: 0vh 0;
+    }   
+    #global-footer .footer-grid{
+    grid-template-columns: repeat(2,1fr);
+    grid-template-areas: 
+        "f-terms f-com"
+        "f-copy f-copy"
+        "f-socialm-img f-socialm-img";
+    width: 80%;
+    }
+    #global-footer .footer-terms p, #global-footer .footer-community p{
+    width: 50%;
+        font-size: 1.7rem;
+    }
+    #global-footer .footer-copyright{
+    padding-top: 1.5vh;
+    font-size: 1.5rem;
+    width: 80%;
+    display: block;
+    margin: auto;
+    }
+    #global-footer .footer-socialmedia img{
+        width: 70px;
+    }
+    #global-footer .footer-terms, #global-footer .footer-community{
+    margin-top: 20px;
+    }
+    #global-footer ul li{
+    padding: 0 10px;
+    font-size: 1.4rem;
+    }
+}
+
+/* ########### MEDIA QUERY FOR TABLETS (LANDSCAPE) ########### */
+@media(max-height:820px){
+    .not-on-tablet-lc{
+        display: none;
+    }
+    
+    
+    
+        /* ########### HEADER (GLOBAL) ########### */
+    #global-header .global-header nav{
+        margin-top: 6px;
+    }
+        
+        
+        
+        /* ########### FOOTER (GLOBAL) ########### */ 
+    #global-footer .footer-grid{
+    grid-template-columns: repeat(3,1fr);
+    width: 80%;
+    }
+    #global-footer .footer-terms p, #global-footer .footer-community p{
+    width: 70%;
+    }
+    #global-footer .footer-copyright{
+        padding-top: 1.5vh;
+    font-size: 1.2rem;
+    width: 80%;
+    display: block;
+    margin: auto;
+    }
+    #global-footer .footer-socialmedia img{
+        width: 50px;
+        padding: 3px;
+    }
+    #global-footer .footer-terms, #global-footer .footer-community{
+    margin-top: 20px;
+    }
+    #global-footer ul li{
+    font-size: 1.2rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+/* ########### MEDIA QUERY FOR SMARTPHONES ########### */
+@media(max-width:560px){
+        /* ########### GENERAL ########### */
+    .not-on-small{
+        display: none;
+    }
+    
+    
+    
+        /* ########### TWO-GRID (GLOBAL) ########### */
+    .two-c-grid{
+    grid-template-columns: repeat(1,1fr);
+    grid-template-areas: 
+        "image"
+        "textgrid";
+    padding: 10vh 0;
+    }
+    .two-c-grid img{
+    grid-area: image;
+    width: 70%;
+    }
+    .two-c-grid h3{
+    font-size: 1.5rem;
+    }
+    .two-c-grid p{
+    font-size: 1rem;
+    }
+    .element-group{
+    grid-area: textgrid;
+    margin-top: 5vh;
+    width: 80%;
+    }
+    
+    
+    
+        /* ########### HEADER (GLOBAL) ########### */
+    #global-header .global-header{
+    grid-template-columns: repeat(1,1fr);
+    grid-template-areas: 
+        "h-branding"
+    }
+    #global-header .global-header img{
+    width: 300px;
+    margin: auto;
+    }
+    #global-header .global-showcase p{
+    font-size: 2.5rem;
+    }
+
+         /* ########### FOOTER (GLOBAL) ########### */
+    #global-footer{
+    padding: 0vh 0;
+    }   
+    #global-footer .footer-grid{
+    grid-template-columns: repeat(1,1fr);
+    grid-template-areas: 
+        "f-terms"
+        "f-com"
+        "f-copy"
+        "f-socialm-img";
+    width: 80%;
+    }
+    #global-footer .footer-terms p, #global-footer .footer-community p{
+    width: 100%;
+    }
+    #global-footer .footer-copyright{
+        padding-top: 1.5vh;
+    font-size: 1.1rem;
+    width: 80%;
+    display: block;
+    margin: auto;
+    }
+    #global-footer .footer-socialmedia img{
+        width: 50px;
+    }
+    #global-footer .footer-terms, #global-footer .footer-community{
+    margin-top: 20px;
+    }
+    #global-footer ul li{
+    padding: 0 10px;
+    font-size: 1.2rem;
+    }
+}
+
+/* ########### MEDIA QUERY FOR SMARTPHONES (LANDSCAPE) ########### */
+@media(max-height:425px){
+    .not-on-small-lc{
+        display: none;
+    }
+    
+    
+    
+        /* ########### TWO-GRID (GLOBAL) ########### */
+    .two-c-grid img{
+    width: 50%;
+    }
+    
+    
+    
+         /* ########### FOOTER (GLOBAL) ########### */
+    #global-footer{
+    padding: 0vh 0;
+    }   
+    #global-footer .footer-grid{
+    grid-template-columns: repeat(2,1fr);
+    }
+    
+    
+    
+        /* ########### HEADER (GLOBAL) ########### */
+    #global-header .global-showcase p{
+    font-size: 3rem;
+    }
+}

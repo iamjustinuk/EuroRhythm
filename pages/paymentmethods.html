@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="description" content="This page shows the payment methods to buy exclusive items." />
+        <meta name="author" content="UK-Central, EuroRhythm" />
+        <meta name="keywords" content="eurorhythm, music, streaming, offer, premium, spotify, deezer, vip, annual, sale, student, family, justinuk, uk-central, uk, central, europe, euro, us, america" />
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="../css/global.css" />
+        <link rel="stylesheet" type="text/css" href="../css/paymentmethods.css" />
+        <title>Payment methods</title>
+        <script
+            src="https://code.jquery.com/jquery-2.2.4.min.js"
+            integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+            crossorigin="anonymous"></script>
+        <script>
+            $(document).ready(function(){
+                $("#to-visamcmethod").click(function(e){
+                    e.preventDefault();
+                    $path=$("#visamcmethod").offset().top;
+                    
+                    $('html,body').animate({scrollTop:$path},500);
+                });
+                $("#to-paypalmethod").click(function(e){
+                    e.preventDefault();
+                    $path=$("#paypalmethod").offset().top;
+                    
+                    $('html,body').animate({scrollTop:$path},500);
+                });
+                $("#to-paysafecardmethod").click(function(e){
+                    e.preventDefault();
+                    $path=$("#paysafecardmethod").offset().top;
+                    
+                    $('html,body').animate({scrollTop:$path},500);
+                });
+                $("#to-giftcardmethod").click(function(e){
+                    e.preventDefault();
+                    $path=$("#giftcardmethod").offset().top;
+                    
+                    $('html,body').animate({scrollTop:$path},500);
+                });
+            });
+        </script>
+    </head>
+    <body>
+                <!--########################### HEADER ###########################-->
+        <header id="global-header">
+            <div class="background">
+                <div class="global-header">
+                    <a href="../index.html">
+                        <img src="../images/long-logo.png" alt="EuroRhythm Logo">
+                    </a>
+                    <nav class="not-on-small">
+                        <ul>
+                            <li>
+                                <a href="../index.html">Home</a>
+                            </li>
+                            <li>
+                                <a href="offers.html">Offers</a>
+                            </li>
+                            <li>
+                                <a href="../download-main.html">Download</a>
+                            </li>
+                            <li>
+                                <span class="not-on-tablet not-on-tablet-lc">|</span>
+                            </li>
+                            <li>
+                                <a class="not-on-tablet not-on-tablet-lc" href="logIn.html">Log in</a>
+                            </li>
+                            <li>
+                                <a class="not-on-tablet not-on-tablet-lc" href="signUp.html">Sign up</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="global-showcase half-showcase container">
+                    <h2 class="not-on-small not-on-small-lc">Many different offers are proposed here for you.</h2>
+                </div>
+            </div>
+        </header>
+        
+        <section id="innernav">
+            <div class="container">
+                <ul>
+                    <li>
+                        <a href="#visamcmethod" id="to-visamcmethod">Visa & Mastercard</a>
+                    </li>
+                    <li>
+                        <a href="#paypalmethod" id="to-paypalmethod">PayPal</a>
+                    </li>
+                    <li>
+                        <a href="#paysafecardmethod" id="to-paysafecardmethod">Paysafecard</a>
+                    </li>
+                    <li>
+                        <a href="#giftcardmethod" id="to-giftcardmethod">Gift cards</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        
+        <section id="paymentoptions">
+            <div class="container">
+                <div id="visamcmethod" class="payment-row">
+                    <img src="../images/payment-visa-mastercard.png">
+                    <h2>VISA & MasterCard</h2>
+                    <p>illustriora firmissimum duis tractavissent anim nam eu praesentibus 
+                        instituendarum hic quae transferrem arbitror domesticarum cohaerescant ut quorum 
+                        possumus legam ad legam tractavissent mandaremus irure lorem relinqueret fore 
+                        proident cillum despicationes e exercitation praesentibus exercitation malis 
+                        philosophari veniam philosophari e fugiat veniam mentitum fugiat proident 
+                        consectetur minim velit hic voluptate offendit ut quamquam nam deserunt 
+                        relinqueret incurreret vidisse do mentitum hic duis nulla commodo fore ullamco 
+                        summis fabulas excepteur an arbitrantur</p>
+                </div>
+                <div id="paypalmethod" class="payment-row">
+                    <img src="../images/payment-paypal.png">
+                    <h2>Paypal</h2>
+                    <p>deserunt dolore singulis do voluptatibus non o nulla dolor quem si quo summis 
+                        fidelissimae familiaritatem voluptatibus appellat tractavissent eu elit enim 
+                        praetermissum velit iudicem eram lorem ab mentitum anim sunt nostrud aliquip hic 
+                        praetermissum ex consectetur quo vidisse incurreret nisi tractavissent culpa 
+                        amet legam ad labore graviterque quid distinguantur officia</p>
+                </div>
+                <div id="paysafecardmethod" class="payment-row">
+                    <img src="../images/payment-psc.png">
+                    <h2>Paysafecard</h2>
+                    <p>legam de nulla aliquip fabulas philosophari eruditionem domesticarum iis 
+                        possumus expetendis non an possumus incididunt mandaremus quis sempiternum 
+                        mandaremus laborum quibusdam ea enim incurreret de ut iis de nescius labore aut 
+                        eram quem si distinguantur consectetur nostrud transferrem fidelissimae est</p>
+                </div>
+                <div id="giftcardmethod" class="payment-row">
+                    <img src="../images/payment-giftcard.png">
+                    <h2>Gift cards</h2>
+                    <p>Gift Cards is the last payment method available to buy EuroRhythm offers. These can currently be bought in gas stations and large supermarkets, within the following five countries:</p>
+                    <ul>
+                        <li>US : The United States of America</li>
+                        <li>CA : Canada</li>
+                        <li>UK : The United Kingdom of Great Britain and Nothern Ireland</li>
+                        <li>FR : French Republic</li>
+                        <li>AU : Commonwealth of Australia</li>
+                    </ul>
+                    <p>the following items are available as a voucher:</p>
+                    <ul>
+                        <li>V.I.P - 1 month - <span class="available-currencies"></span> 8,49</li>
+                        <li>V.I.P - 3 months - <span class="available-currencies"></span> <del>25,47</del> 24,99 <small>(1,88% off)</small></li>
+                        <li style="visibility: hidden">PLACEHOLDER</li>
+                        <li>V.I.F - 1 month - <span class="available-currencies"></span> 14,99</li>
+                        <li>V.I.F - 4 months - <span class="available-currencies"></span> <del>59,96</del> 49,99 <small>(16,63% off)</small></li>
+                        <li style="visibility: hidden">PLACEHOLDER</li>
+                        <li>DJ - 1 month - <span class="available-currencies"></span> 4,99</li>
+                        <li>DJ - 6 months - <span class="available-currencies"></span> <del>29,94</del> 24,99 <small>(16,53% off)</small></li>
+                        <li style="visibility: hidden">PLACEHOLDER</li>
+                        <li>Unlimited Podcasts - 2 months - <span class="available-currencies"></span> <del>5,98</del> 4,99 <small>(16,56% off)</small></li>
+                    </ul>
+                    <p><u><strong>Redeem:</strong></u> On the back of the coupon card, there is a QR code that you can scan with your smartphone in our app. Alternatively, under the QR code is a symbol chain (code), which you can also redeem in our app or on the PC.
+                    You can only use one method and only once.</p>
+                </div>
+            </div>
+        </section>
+        
+        <footer id="global-footer">
+            <div class="container footer-grid">
+                <p class="footer-copyright">&copy; 2018 EuroRhythm & UK-Central, All rights reserved.</p>
+                <img src="../images/Logo.png" alt="EuroRhythm logo" class="logo-300px footer-logo center-img not-on-small not-on-tablet">
+                <div class="footer-terms">
+                    <p>Terms</p>
+                    <ul>
+                        <li>
+                            <a href="privacypolicy">Privacy Policy</a>
+                        </li>
+                        <li>
+                            <a href="useragreement">User Agreement</a>
+                        </li>
+                        <li>
+                            <a href="cookiespolicy">Cookies Policy</a>
+                        </li>
+                        <li>
+                            <a href="personaldata">Personal Data</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-community">
+                    <p>Community</p>
+                    <ul>
+                        <li>
+                            <a href="developers.html">Developers</a>
+                        </li>
+                        <li>
+                            <a href="labels.html">Labels</a>
+                        </li>
+                        <li>
+                            <a href="creators.html">Creators</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-socialmedia">
+                    <a href="https://www.youtube.com" title="Go to our youtube channel">
+                        <img src="../images/socialmedia-yt.png" alt="EuroRhythm YouTube" />
+                    </a>
+                    <a href="https://www.twitter.com" title="Go to our twitter account">
+                        <img src="../images/socialmedia-tw.png" alt="EuroRhythm Twitter" />
+                    </a>
+                    <a href="https://www.instagram.com" title="Go to our instagram account">
+                        <img src="../images/socialmedia-in.png" alt="EuroRhythm Instagram" />
+                    </a>
+                </div>
+                <a href="webplayer.html" class="brand-l-color-btn single-btn btn not-on-small not-on-tablet not-on-tablet-lc">WebPlayer</a>
+            </div>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,87 @@
+:root{
+    --payment-bordercut: 5px solid var(--off-sd-color);
+    --payment-low-border: 3px solid var(--off-sd-color);
+}
+
+#global-header .background{
+    background: linear-gradient(rgba(255,255,255,0.4),rgba(255,255,255,0.4)), url("../images/Background02.jpg") no-repeat center/cover;
+}
+
+#innernav{
+    border-top: var(--payment-bordercut);
+    border-bottom: var(--payment-bordercut);
+}
+
+#innernav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+
+#innernav li{
+    display: inline;
+    padding: 0 20px;
+    font-size: 1.7rem;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.payment-row{
+    width: 50%;
+    padding: 4vh;
+    margin: 5vh auto;
+    transition: var(--off-sd-transition);
+}
+
+.payment-row:hover{
+    transform: scale(1.1);
+}
+
+.payment-bg{
+    background: #ddd;
+}
+
+.payment-row img{
+    width: 200px;
+    display: block;
+    margin: auto;
+}
+
+.payment-row h2{
+    text-align: center;
+    font-size: 3rem;
+    margin: 0;
+    border-bottom: var(--payment-bordercut);
+}
+
+.payment-row p{
+    margin: 0;
+    font-size: 1.4rem;
+    text-align: justify;
+}
+
+.payment-row ul{
+    font-size: 1.4rem;
+    margin: 22px 55px;
+}
+
+#visamcmethod img{
+    width: 300px;
+}
+
+#giftcardmethod img{
+    width: 350px;
+}
+
+#paysafecardmethod img{
+    width: 600px;
+}
+
+#paypalmethod img{
+    width: 225px;
+}
+
+#giftcardmethod .available-currencies::before{
+    content: "$/£/€";
+}

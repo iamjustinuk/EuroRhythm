@@ -1,0 +1,281 @@
+/* ########## OFFERS :ROOT (VARIABLES : Offer/offers.html) ########## */
+:root{
+    --offers-pricebox-tag-font: "Alfa Slab One",Arial,sans-serif;
+    --offers-pricebox-zoom: all 200ms ease-in-out;
+    --offers-pricerow-zoom: all 400ms ease-in-out;
+    --offers-pricebox-border: 3px solid var(--off-sd-color);
+    --offers-h1tag-border: 5px solid var(--off-sd-color);
+    --offers-pricerow-border: 7px solid #666;
+    --offers-hover-translate-above: translate(0,10px);
+    --offers-hover-box-shadow: 7px 7px #aaa;
+    --offers-pricerow-box-shadow: 5px 5px #ccc;
+}
+
+/* ########## GENERAL ########## */
+.price-card .one-price{
+    padding-top: 19px;
+    width: 35%;
+    float: right;
+}
+
+/* ########## INDEX HEADER ########## */
+#global-header .background{
+    background: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url("../images/Background01.jpg") no-repeat center/cover;
+}
+#global-header .global-showcase .half-showcase{
+    margin-top: 160px;
+}
+
+/* ########## SECTION : GIFT CARDS ########## */
+.readmore-btn{
+    margin-top: 3vh;
+}
+
+/* ########## SECTION : PRICE-BOX (OUTSIDE OF CONTENT)########## */
+.price-card .two-c-grid-h{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-areas: 
+        ". price-box1 price-box2 .";
+    grid-gap: 10vh;
+}
+.price-card .pricing-grid{
+    margin: 5vh auto;
+    margin-bottom: 1vh;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-areas: 
+        "o-head"
+        "o-function"
+        "o-f-buy"
+        "o-f-function"
+        "o-btn";
+}
+.price-card .smaller-grid{
+    width: 110%;
+    border: 3px solid var(--off-sd-color);
+    border-radius: 20px;
+    transition: var(--offers-pricebox-zoom);
+}
+.price-card .smaller-grid:hover{
+    transform: translate(0,-10px);
+    box-shadow: 10px 10px #aaa;
+}
+
+/* ########## SECTION : PRICE-BOX (BOX-DECLARATION)########## */
+.price-card #price-box1{ /* Free-Version */
+    grid-area: price-box1
+}
+.price-card #price-box2{ /* V.I.P-Version */
+    grid-area: price-box2
+}
+
+/* ########## SECTION : PRICE-BOX (INSIDE OF CONTENT)########## */
+.price-card .grid-head{
+    grid-area: o-head;
+    border-bottom: var(--offers-pricebox-border);
+    height: 65px;
+}
+.price-card .grid-head h2{
+    padding-top: 7px;
+    font-size: 2.5rem;
+    width: 60%;
+    float: left;
+    font-family: var(--offers-pricebox-tag-font);
+    font-weight: lighter;
+}
+.price-card h3{
+    padding-top: 5px;
+}
+.price-card .pricing-grid .grid-head small, .price-row small{
+    font-size: 0.8rem;
+}
+.price-card h4{
+    font-size: 1rem;
+}
+.price-card h3, .price-card h4{
+    font-size: 1.25rem;
+    float: right;
+    width: 35%;
+    padding-right: 12px;
+}
+.price-card h2, .price-card h3, .price-card h4, .price-card p{
+    text-align: center;
+}
+.price-card .grid-head h2, .price-card .grid-head h3, .price-card h4, .price-card .main-function, .price-card .first-buy-function, .price-card p{
+    margin: 0;
+}
+.price-card .main-function{
+    grid-area: o-function;
+}
+.price-card ul{
+    padding: 2.5vh 4vh 2.5vh 7vh;
+    list-style-image: url(../Bilder/symbol-checkmark.png);
+}
+.price-card p{
+    grid-area: o-f-buy;
+    border-bottom: var(--offers-pricebox-border);
+    border-top: var(--offers-pricebox-border);
+}
+.price-card .first-buy-function{
+    grid-area: o-f-function;
+}
+.price-card a{
+    grid-area: o-btn;
+}
+.price-card .btn, .price-row .btn{
+    margin-bottom: 2vh;;
+    font-family: monospace;
+    font-size: 1.6rem;
+}
+.price-card .gray-btn{
+    background: #dfdfdf;
+}
+.price-card .gray-btn:hover{
+    background: #ccc;
+}
+.stand-alone p{
+    text-align: left;
+    width: 50%;
+    margin: auto;
+    border: none;
+    margin-bottom: 2vh;
+    font-size: 0.9rem;
+}
+.stand-alone small{
+    font-size: 0.7rem;
+}
+
+/* ########## SECTION : PRICE-ROW########## */
+.price-row{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-areas: 
+        "pr-t pr-t pr-rm";
+    background: #eee;
+    width: 100%;
+    margin: 3vh 0;
+    padding: 1.5vh 0;
+    text-align: center;
+    transition: var(--offers-pricerow-zoom);
+}
+.price-row:hover{
+    transform: scale(1.03);
+    box-shadow: var(--offers-pricerow-box-shadow);
+    background: var(--off-color-theme);
+    color: #fff;
+}
+.price-row:hover span{
+    color: #fff;
+    transition: var(--offers-pricerow-zoom);
+}
+.price-row span{
+    transition: var(--offers-pricerow-zoom);
+}
+.offer-h1tag h1{
+    margin: 0;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1rem;
+    font-weight: 900;
+    border-bottom: var(--offers-h1tag-border);
+    border-top: var(--offers-h1tag-border);
+}
+.price-row h2{
+    margin: 1vh 0;
+    grid-area: pr-t;
+    font-family: var(--offers-pricebox-tag-font);
+    font-size: 2.5rem;
+    font-weight: lighter;
+    font-variant: small-caps;
+}
+.price-row a{
+    display: block;
+    grid-area: pr-rm;
+    margin-bottom: 0 !important;
+    margin-top: 0.55vh;
+}
+.price-row .gray-btn{
+    background: #ddd;
+}
+.price-row .gray-btn:hover{
+    background: #fff;
+}
+
+.animImg{
+    animation-name: imgAnimated;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+    transform: translateX(-200%);
+}
+
+@keyframes imgAnimated{
+    from {
+        transform: translateX(-200%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+.animBox{
+    animation-name: animBox;
+    animation-delay: 2s;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    transform: translateX(200%);
+}
+
+@keyframes animBox{
+    from {
+        transform: translateX(200%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+.animH1{
+    animation-name: animText;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    z-index: -1;
+    transform: translateY(-200%);
+}
+
+@keyframes animText{
+    0% {
+        transform: translateY(-200%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

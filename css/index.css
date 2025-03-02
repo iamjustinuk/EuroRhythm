@@ -1,0 +1,179 @@
+/* ########## INDEX :ROOT (VARIABLES : index.html) ########## */
+:root{
+    --index-mq-border-cut: 3px solid rgba(180,180,180,0.8);
+}
+
+/* ########## INDEX HEADER ########## */
+#global-header .background{
+    background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url("../images/Background00.jpg") no-repeat center/cover;
+    height: 100vh;
+    width: 100vw;
+}
+#global-header .global-showcase{
+    padding-top: 300px;
+}
+
+/* ########## SECTION WITH BG (SERVICES) ########## */
+.index-bg-section{
+    min-height: 350px;
+    text-align: center;
+    color: #fff;
+    padding: 5vh 0;
+}
+.index-bg-section h3{
+    margin: 0;
+    font-size: 3.25rem;
+    line-height: 3.2rem;
+    text-shadow: 3px 3px #222;
+}
+.index-bg-section p{
+    margin: 0;
+    font-size: 1.8rem;
+    width: 60%;
+    margin: auto;
+    font-weight: bold;
+    text-shadow: 2.5px 2.5px #222;
+}
+/* ### SPECIAL FORM ### */
+.index-normal-bg-section h3{
+    padding-bottom: 1rem;
+    margin-top: 5rem;
+}
+
+/* ########## SERVICE : REDIRECT ########## */
+#index-flowtext{
+    background: linear-gradient(rgba(255,255,255,0.2),rgba(255,255,255,0.2)), url("../images/index-flowtext.jpg") no-repeat center/cover;
+}
+#index-flowtext img{
+    width: 22.5%;
+    display: block;
+    margin: auto;
+}
+#index-flowtext h3{
+    padding-bottom: 1rem;
+}
+#index-flowtext p{
+    padding-top: 1rem;
+    border-top: 5px dashed var(--off-color-theme);
+}
+
+/* ########## SECTION : CHARTS ########## */
+#index-charttext img{
+    width: 40%;
+}
+
+/* ########## SERVICE : LYRIKA ########## */
+#index-lyrics{
+    background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url("../images/index-lyrics.jpg") no-repeat center/cover;
+}
+
+/* ########## SECTION : HELP ########## */
+#index-help{
+    background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url("../images/index-help.jpg") no-repeat center/cover;
+}
+
+.anim1{
+    animation-name: anim1;
+    animation-duration: 3s;
+}
+
+@keyframes anim1{
+    from {
+        left: -1000px;
+    }
+    to {
+        left: 0px;
+    }
+}
+
+.imgAnim{
+    animation-name: imgAnimation;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    transform: translateY(200%);
+}
+
+@keyframes imgAnimation{
+    from {
+        transform: translateY(200%);
+    }
+    to {
+        transform: translateY(0px);
+    }
+}
+
+.imgAnim1{
+    animation-delay: 1s;
+}
+
+.imgAnim2{
+    animation-delay: 2s;
+}
+
+.imgAnim3{
+    animation-delay: 3s;
+}
+
+
+/* ########### MEDIA QUERY FOR TABLETS ########### */
+@media(max-width:960px){
+    #index-flowtext img{
+    width: 300px;
+    margin-top: 1rem;
+    }
+    #index-flowtext h3{
+    padding-bottom: 0.9rem;
+    font-size: 3rem;
+    }
+    #index-flowtext p{
+    padding-top: 0rem;
+    }
+    .index-normal-bg-section h3{
+        border-bottom: var(--index-mq-border-cut);
+    }
+    .index-bg-section p{
+    width: 85%;
+    }
+}
+
+/* ########### MEDIA QUERY FOR TABLETS (LANDSCAPE) ########### */
+
+
+/* ########### MEDIA QUERY FOR SMARTPHONES ########### */
+@media(max-width:560px){
+    #global-header .global-showcase{
+        padding-top: 28vh;
+    }
+    #index-flowtext img{
+    width: 200px;
+    margin-top: 1rem;
+    }
+    #index-flowtext h3{
+    padding-bottom: 0.5rem;
+    font-size: 2rem;
+    }
+    #index-flowtext p{
+    padding-top: 0rem;
+    }
+    .index-bg-section h3{
+    font-size: 1.7rem;
+    line-height: 2rem;
+    padding-bottom: 10px;
+    }
+    .index-normal-bg-section h3{
+        border-bottom: var(--index-mq-border-cut);
+    }
+    .index-bg-section p{
+    font-size: 1.1rem;
+    width: 100%;
+    }
+}
+
+/* ########### MEDIA QUERY FOR SMARTPHONES (LANDSCAPE) ########### */
+/* ########### MEDIA QUERY FOR SMARTPHONES (LANDSCAPE) ########### */
+@media(max-height:425px){
+        /* ########### HEADER (GLOBAL) ########### */
+    #global-header .global-showcase{
+        padding-top: 20vh;
+    }
+}
